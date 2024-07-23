@@ -1,0 +1,7 @@
+<div>
+<a [routerLink]="['/wonder', wonder.id]" 
+*ngFor="let wonder of wonders"
+style="text-decoration: none; margin-right: 10px;">
+    {{wonder.name}}
+</a>
+</div>

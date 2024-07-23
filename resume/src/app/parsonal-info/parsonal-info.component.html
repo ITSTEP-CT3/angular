@@ -1,0 +1,17 @@
+<div>
+    <h2>ФИО: {{fullName}}</h2>
+    <p>Телефон: {{phone}}</p>
+    <p>Город проживания: {{city}}</p>
+
+    <h3>Навыки: </h3>
+    <ul>
+        <li *ngFor="let skill of skills">{{skill}}</li>
+    </ul>
+    <h3>Опыт работы: </h3>
+    <ul>
+        <li *ngFor="let experience of experienceList">
+            <p><strong>{{experience.company}} : {{experience.position}}</strong></p>
+            <p>{{experience.years}}</p>
+        </li>
+    </ul>
+</div>
